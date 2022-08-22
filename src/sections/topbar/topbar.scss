@@ -1,0 +1,72 @@
+// global classes
+
+.topbar-between {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg{
+    background-color: #000; 
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);}
+
+    // project layout
+    .topbar {
+        height: 70px;
+        top: 0;
+        z-index: 2;
+        width: 80%;
+        color: #fff;
+
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+            .left {
+                display: flex;
+                justify-content: space-between;
+
+                .phone {
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        margin: 20px;
+                    }
+                }
+            }
+
+            .right {
+                display: flex;
+                justify-content: center;
+                justify-content: space-around;
+                width: 400px;
+
+                .location-widget {
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        margin: 20px;
+                    }
+                }
+
+                .contact-widget {
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        margin: 20px;
+                    }
+                }
+            }
+        }
+    }
