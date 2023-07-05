@@ -1,7 +1,8 @@
 import { useState } from "react";
-import './intro.scss'
-import '../../sections/navbar/navbar.scss';
-import bgHomePage from '../../assets/Background.png';
+import "./intro.scss";
+import "../../sections/navbar/navbar.scss";
+import bgHomePage from "../../assets/Background.png";
+import hamburgerIcon from "../../assets/hamburguer.png";
 
 const Intro = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -12,7 +13,7 @@ const Intro = () => {
 
   return (
     <div className="intro" id="home">
-        <img src={bgHomePage} alt="bg" className="bg-home-page" />
+      <img src={bgHomePage} alt="bg" className="bg-home-page" />
       <div className="width bg_navbar">
         <nav className="navigation">
           <a href="#home" className="brand-name">
@@ -25,6 +26,8 @@ const Intro = () => {
             }}
           >
           </button>
+          <img src={hamburgerIcon} alt="Hamburger" style={{width: '25px', height: '25px'}}/>
+
           <div
             className={
               isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
@@ -38,10 +41,12 @@ const Intro = () => {
                 <a href="#services">Servicios</a>
               </li>
               <li>
-                {/* <a href="/contact">Programa una llamada</a> */}
-                <button className="cssbuttons-io-button" onClick={handleProgramaLlamadaClick}>
-                Programa una llamada
-              </button>
+                <button
+                  className="cssbuttons-io-button"
+                  onClick={handleProgramaLlamadaClick}
+                >
+                  Programa una llamada
+                </button>
               </li>
             </ul>
           </div>
@@ -52,7 +57,7 @@ const Intro = () => {
         <p>Test vehiculares para particulares y empresas</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Intro
+export default Intro;
