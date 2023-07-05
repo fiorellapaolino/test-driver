@@ -26,7 +26,7 @@ const Intro = () => {
             }}
           >
           </button>
-          <img src={hamburgerIcon} alt="Hamburger" style={{width: '25px', height: '25px'}}/>
+          {/* <img className="hamburguer" src={hamburgerIcon} alt="Hamburger" style={{width: '25px', height: '25px'}}/> */}
 
           <div
             className={

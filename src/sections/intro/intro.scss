@@ -41,7 +41,7 @@
             margin-left: auto;
     
             ul {
-                display: none;
+                display: flex;
                 align-items: center;
                 padding: 0;
             }
@@ -99,43 +99,42 @@
             }
         }
     
-        .hamburger {
-            border: 0;
-            height: 40px;
-            width: 40px;
-            padding: 0.5rem;
-            border-radius: 50%;
-            background-color: #283b8b;
-            cursor: pointer;
-            transition: background-color 0.2s ease-in-out;
-            position: absolute;
-            top: 50%;
-            right: 25px;
-            transform: translateY(-50%);
-            display: none;
+        // .hamburger {
+        //     border: 0;
+        //     height: 40px;
+        //     width: 40px;
+        //     padding: 0.5rem;
+        //     border-radius: 50%;
+        //     background-color: #283b8b;
+        //     cursor: pointer;
+        //     transition: background-color 0.2s ease-in-out;
+        //     position: absolute;
+        //     top: 50%;
+        //     right: 25px;
+        //     transform: translateY(-50%);
+        //     display: none;
     
-            &:hover {
-                background-color: #2642af;
-            }
-        }
+        //     &:hover {
+        //         background-color: #2642af;
+        //     }
+        // }
     }
     
     @media screen and (max-width: 550px) {
-        .hamburger {
-            display: block;
-        }
-    
+
         .navigation-menu {
             ul {
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                left: 0;
+                // flex-direction: column;
+                // position: absolute;
+                // top: 60px;
+                // left: 0;
+                // width: 100%;
+                // height: calc(100vh - 60px);
+                // background-color: white;
+                // border-top: 1px solid black;
                 width: 100%;
-                height: calc(100vh - 60px);
-                background-color: white;
-                border-top: 1px solid black;
-                display: none;
+                flex-direction: column;
+                display: flex;
             }
     
             li {
