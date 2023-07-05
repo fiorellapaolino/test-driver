@@ -52,4 +52,21 @@
             }
         }
     }
+
+    .card{
+        width: auto;
+    }
+
+    .card-title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        width: 70%;
+    }
+
+    .card-description {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
 }

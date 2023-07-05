@@ -1,12 +1,15 @@
 .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 130vh;
     background-color: black;
 
     .contact-section {
         display: flex;
-        justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 50px;
+        justify-content: center;
         text-transform: uppercase;
 
         hr {
@@ -18,20 +21,26 @@
         }
 
         h4 {
+            text-align: center;
             color: #FFA343;
         }
     }
 
     .contact-container {
-        height: 100vh;
-        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         .contact-content {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
+            text-align: center;
+
+
             h3 {
                 color: white;
-                margin-bottom: 30px;
+                line-height: 1.5;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                font-size: 40px;
             }
 
             .calendly-inline-widget {
@@ -39,43 +48,48 @@
                 height: 630px;
             }
 
-            .cssbuttons-io-button {
-                background: #FFA343;
-                color: white;
-                font-family: inherit;
-                padding: 0.35em;
-                padding-left: 1.2em;
-                font-size: 17px;
-                font-weight: 500;
-                border-radius: 0.9em;
-                border: none;
-                letter-spacing: 0.05em;
+            .button-container {
                 display: flex;
-                align-items: center;
-                box-shadow: inset 0 0 1.6em -0.6em #FFA343;
-                overflow: hidden;
-                position: relative;
-                height: 2.8em;
-                padding-right: 1.3em;
-                cursor: pointer;
-            }
+                justify-content: center;
 
-            .cssbuttons-io-button:hover .icon {
-                width: calc(100% - 0.6em);
-            }
+                .cssbuttons-io-button {
+                    background: #FFA343;
+                    color: white;
+                    font-family: inherit;
+                    padding: 0.35em;
+                    padding-left: 1.2em;
+                    font-size: 17px;
+                    font-weight: 500;
+                    border-radius: 0.9em;
+                    border: none;
+                    letter-spacing: 0.05em;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: inset 0 0 1.6em -0.6em #FFA343;
+                    overflow: hidden;
+                    position: relative;
+                    height: 2.8em;
+                    padding-right: 1.3em;
+                    cursor: pointer;
+                }
 
-            .cssbuttons-io-button .icon svg {
-                width: 1.1em;
-                transition: transform 0.3s;
-                color: #7b52b9;
-            }
+                .cssbuttons-io-button:hover .icon {
+                    width: calc(100% - 0.6em);
+                }
 
-            .cssbuttons-io-button:hover .icon svg {
-                transform: translateX(0.1em);
-            }
+                .cssbuttons-io-button .icon svg {
+                    width: 1.1em;
+                    transition: transform 0.3s;
+                    color: #7b52b9;
+                }
 
-            .cssbuttons-io-button:active .icon {
-                transform: scale(0.95);
+                .cssbuttons-io-button:hover .icon svg {
+                    transform: translateX(0.1em);
+                }
+
+                .cssbuttons-io-button:active .icon {
+                    transform: scale(0.95);
+                }
             }
         }
     }

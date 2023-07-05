@@ -5,6 +5,7 @@ import Navbar from "./sections/navbar/navbar";
 import Services from "./sections/services/services";
 import Contact from "./sections/contact/contact";
 import CardData from "./components/services/cardData";
+import Footer from "./sections/footer/footer";
 import './app.scss'
 
 
@@ -20,6 +21,7 @@ function App() {
           <AboutUs />
           <Services details={CardData}/>
           <Contact />
+          <Footer />
         </div>
       </div>
     </div>
