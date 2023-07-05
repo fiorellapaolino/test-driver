@@ -1,9 +1,13 @@
-import { useState } from "react";
-import './navbar.scss'
+import React, { useState } from "react";
+import './navbar.scss';
 
 const Navbar = () => {
-
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+  const handleProgramaLlamadaClick = () => {
+    const contactSection = document.getElementById("contact");
+    contactSection.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="width bg_navbar">
@@ -18,18 +22,6 @@ const Navbar = () => {
           }}
         >
           {/* icon from Heroicons.com */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            viewBox="0 0 20 20"
-            fill="white"
-          >
-            <path
-              fillRule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-              clipRule="evenodd"
-            />
-          </svg>
         </button>
         <div
           className={
@@ -38,14 +30,13 @@ const Navbar = () => {
         >
           <ul>
             <li>
-              <a href="/home">Sobre nosotros</a>
+              <a href="/about">Sobre nosotros</a>
             </li>
             <li>
-              <a href="/about">Servicios</a>
+              <a href="/services">Servicios</a>
             </li>
             <li>
-              {/* <a href="/contact">Programa una llamada</a> */}
-              <button className="cssbuttons-io-button"> 
+              <button className="cssbuttons-io-button" onClick={handleProgramaLlamadaClick}>
                 Programa una llamada
               </button>
             </li>
@@ -53,7 +44,7 @@ const Navbar = () => {
         </div>
       </nav>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

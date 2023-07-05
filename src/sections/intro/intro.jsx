@@ -6,12 +6,16 @@ import bgHomePage from '../../assets/Background.png';
 const Intro = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
+  const handleProgramaLlamadaClick = () => {
+    window.location.href = "#contact";
+  };
+
   return (
-    <div className="intro">
+    <div className="intro" id="home">
         <img src={bgHomePage} alt="bg" className="bg-home-page" />
       <div className="width bg_navbar">
         <nav className="navigation">
-          <a href="/" className="brand-name">
+          <a href="#home" className="brand-name">
             TestDriver
           </a>
           <button
@@ -28,16 +32,16 @@ const Intro = () => {
           >
             <ul>
               <li>
-                <a href="/home">Sobre nosotros</a>
+                <a href="#about">Sobre nosotros</a>
               </li>
               <li>
-                <a href="/about">Servicios</a>
+                <a href="#services">Servicios</a>
               </li>
               <li>
                 {/* <a href="/contact">Programa una llamada</a> */}
-                <button className="cssbuttons-io-button">
-                  Programa una llamada
-                </button>
+                <button className="cssbuttons-io-button" onClick={handleProgramaLlamadaClick}>
+                Programa una llamada
+              </button>
               </li>
             </ul>
           </div>

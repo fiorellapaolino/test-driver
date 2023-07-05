@@ -5,10 +5,10 @@ import Tools from '../../assets/tools-color.png'
 
 const Services = (props) => {
   return (
-    <div className="services">
+    <div className="services" id="services">
       <div className="about-us-section">
         <hr></hr>
-        <h4>services</h4>
+        <h4>Servicios</h4>
         <hr></hr>
       </div>
       <div className="services-section">
